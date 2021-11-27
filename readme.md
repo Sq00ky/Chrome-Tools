@@ -4,7 +4,7 @@ Welcome to the repo. This repo will have a small amount of Chrome tools that can
 
 ### Read Chrome History
 This is pretty much a fancy database wrapper... Yeah... that's it. There's two arguments (both optional):
--d --database - Specify the database you would like to retrieve the browser history from. By default this will use C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\History
+-d --database - Specify the database you would like to retrieve the browser history from. By default this will use ```C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\History```
 -o --output - Specify if you would like the output file, by default this will print the text to the screen
 
 <img src=https://i.imgur.com/kLhIDk8.png>
