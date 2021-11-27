@@ -7,7 +7,7 @@ This is pretty much a fancy database wrapper... Yeah... that's it. There's two a
 -d --database - Specify the database you would like to retrieve the browser history from. By default this will use C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\History
 -o --output - Specify if you would like the output file, by default this will print the text to the screen
 
-[https://i.imgur.com/kLhIDk8.png](https://i.imgur.com/kLhIDk8.png)
+<img src=https://i.imgur.com/kLhIDk8.png>
 
 ### Inject Chrome History
 
