@@ -30,7 +30,11 @@ Yeah!
 
 <img src=https://i.imgur.com/XU3KOgF.png>
 
-Anyways, there's some minor issues that need to be fixed. I'll look into doing it at some point.
+Anyways, there's some minor issues that need to be fixed. I'll look into doing it at some point. The CSV must be formatted as so:
+
+```
+user@example.com,password123!,http://example.com
+```
 
 To do:
 - Add parameter that takes password which can be used for master key decryption ...
