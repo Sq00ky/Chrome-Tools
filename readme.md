@@ -12,3 +12,26 @@ This is pretty much a fancy database wrapper... Yeah... that's it. There's two a
 ### Inject Chrome History
 
 todo
+
+### Inject Chrome Creds
+
+This is, yet again, another fancy db wrapper that encrypts a given string (ex. P@ssw0rd123) and injects it into Google Chrome's saved credential database. The Chrome encryption process is relatively complicated; Google generates a 32-character random string that is encrypted using Microsoft's Data Protection API (DPAPI). This will decode it so it can be used as an encryption key. Google prefixes this key with DPAPI for some reason... It trims that, then generates a 12-byte IV/Nonce which is used to encrypt the password. The format looks roughly like so: 
+
+v10 (A Google specific prefix)
+12-byte random nonce/iv
+encrypted AES256-GCM string
+
+```v10\xc5\xaa\xa4~\xde\xfbx\xbfC@Sz\t,\x91\x84\x85\xfc\x9f\x15%F1\x85r```
+
+From there, the full blob is injected into the ChromeDB. It's still very much a work-in-progress
+<img src=https://i.imgur.com/Khn2yjv.png>
+
+Yeah!
+
+<img src=https://i.imgur.com/XU3KOgF.png>
+
+Anyways, there's some minor issues that need to be fixed. I'll look into doing it at some point.
+
+To do:
+- Add parameter that takes password which can be used for master key decryption ...
+
